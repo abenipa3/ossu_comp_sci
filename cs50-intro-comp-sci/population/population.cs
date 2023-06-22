@@ -1,7 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-// Assignment completed in the Harvard CS50 codespa
+// Assignment completed in the Harvard CS50 codespace
+
 int main(void)
 {
     // Compile by running make population
