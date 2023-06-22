@@ -1,7 +1,5 @@
 # OSSU Computer Science
 
-Hello, and welcome! This repo will serve as a progress tracker as I pursue Open Source Society University's computer science [curriculum](https://github.com/ossu/computer-science#curriculum). 
+Hello, and welcome! This repo will serve as a progress tracker as I pursue Open Source Society University's computer science [curriculum](https://github.com/ossu/computer-science#curriculum).
 
-~~I said I'd do this back in 2022. I'm doing it for reals this year . :)~~
-
-Trello: https://trello.com/b/NFBOjJyq/ossu
+Currently taking [CS50 - Intro to Computer Science](https://www.edx.org/course/introduction-computer-science-harvardx-cs50x#!) as of June 2023.
