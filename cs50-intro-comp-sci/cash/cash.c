@@ -37,17 +37,20 @@ int main(void)
 
 int get_cents(void)
 {
-    int cents;
-    do
-    {
-        cents = get_int("Change owed: \n");
-    }
-    while (cents < 0 || cents > 0);
-    return cents;
+    int change;
+    change = get_int("Change owed: \n");
+    return change;
 }
 
 int calculate_quarters(int cents)
 {
+    do
+    {
+        int cents;
+        cents = get_cents();
+
+    }
+    while (height < 1 || height > 8);
     // TODO
     return 0;
 }
