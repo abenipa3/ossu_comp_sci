@@ -1,0 +1,4 @@
+- Write a prompt that asks user for input by using get_int
+- Ensure that when an input is invalid, user will need to add a different number when reprompt.
+- Use do-while to prompt the user to enter the height less than 1 or greater than 8.
+- Use for-loop to create the bricks (hashes) based on the height inputted by the user.
