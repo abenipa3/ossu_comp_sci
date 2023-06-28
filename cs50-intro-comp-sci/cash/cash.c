@@ -37,38 +37,64 @@ int main(void)
 
 int get_cents(void)
 {
-    int change;
-    change = get_int("Change owed: \n");
-    return change;
+    // We ask the user how much they owe.
+    int cents;
+    do
+    {
+        cents = get_int("Change owed: \n");
+    }
+    // If user enters a number less than 0, the prompt will ask to enter a number again.
+    // Number must be greater than or equal to zero.
+    while (cents < 0);
+    return cents;
 }
 
 int calculate_quarters(int cents)
 {
-    do
+    // Used while to cycle through how many quarters is needed for the cents owed.
+    int quarters = 0;
+    while (cents >= 25)
     {
-        int cents;
-        cents = get_cents();
-
+        cents = cents - 25;
+        quarters++;
     }
-    while (height < 1 || height > 8);
-    // TODO
-    return 0;
+    // When the amount is less than 25, it will return the # of quarters and proceed with the next methods.
+    return quarters;
 }
 
 int calculate_dimes(int cents)
 {
-    // TODO
-    return 0;
+    // Same applied as quarters
+    int dimes = 0;
+    while (cents >= 10)
+    {
+        cents = cents - 10;
+        dimes++;
+    }
+    return dimes;
 }
 
 int calculate_nickels(int cents)
 {
-    // TODO
-    return 0;
+    // Same applied as quarters and dimes
+    int nickels = 0;
+    while (cents >= 5)
+    {
+        cents = cents - 5;
+        nickels++;
+    }
+    return nickels;
 }
 
 int calculate_pennies(int cents)
 {
-    // TODO
-    return 0;
+    // Same applied as quarters, dimes and nickels
+    int pennies = 0;
+    while (cents >= 1)
+    {
+        cents = cents - 1;
+        pennies++;
+    }
+    return pennies;
+    // The end result will return # coins needed.
 }
