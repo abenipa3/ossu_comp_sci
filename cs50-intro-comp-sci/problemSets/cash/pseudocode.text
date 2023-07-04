@@ -1,9 +1,0 @@
-- get_cents with get_int or get_float to rpompt the user for a number of cents.
-  - make it so that if the user inputs a negative int, then code will prompt the user again.
-  - do { something } while cents >= 0;
-- do while for calculating how many quarters are needed and returns an int.
-  - if the amount of cents is less than a quarter, skip.
-- same as above but calculating dimes
-- same as we solve for quarter but with nickels
-- same but with pennies.
-- the main point is that we need to tell the user how many coins are needed.
