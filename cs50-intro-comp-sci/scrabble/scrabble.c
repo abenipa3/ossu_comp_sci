@@ -19,9 +19,20 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
+    printf("Player 1 Wins!");
+    printf("Player 2 Wins!");
+    printf("Tie!");
+
 }
 
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
+    int score = 0;
+
+    // i will start at 0.
+    for (int i = 0, len = strlen(word); i < len; i++)
+    {
+        
+    }
 }
