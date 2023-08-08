@@ -1,5 +1,5 @@
-#include <ctype.h>
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -19,10 +19,18 @@ int main(void)
     int score2 = compute_score(word2);
 
     // TODO: Print the winner
-    printf("Player 1 Wins!");
-    printf("Player 2 Wins!");
-    printf("Tie!");
-
+    if (score1 > score2)
+    {
+        printf("Player 1 Wins!\n");
+    }
+    else if (score2 > score1)
+    {
+        printf("Player 2 Wins!\n");
+    }
+    else
+    {
+        printf("Tie!\n");
+    }
 }
 
 int compute_score(string word)
@@ -31,8 +39,20 @@ int compute_score(string word)
     int score = 0;
 
     // i will start at 0.
+    // stlen accesses the length of the string, storing that in the variable called length.
     for (int i = 0, len = strlen(word); i < len; i++)
     {
-        
+        // isupper = Check if the word is uppercase or lowercase
+        // If word is upper, then it will update the score.
+        if (isupper(word[i]))
+        {
+            score += POINTS[word[i] - 'A'];
+        }
+        else if (islower(word[i]))
+        {
+            score += POINTS[word[i] - 'a'];
+        }
     }
+
+    return score;
 }
